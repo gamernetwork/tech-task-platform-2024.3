@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      {% block "title" %}
+        Youreagamer (no you are)
+      {% endblock "title" %}
+    </title>
+    <link rel="stylesheet" type="text/css" href="{% static "base.css" %}" />
+  </head>
+  <body>
+    <header>
+      {% block "header" %}
+        Youreagamer.net
+      {% endblock "header" %}
+    </header>
+    {% block "content" %}
+      There is no content
+    {% endblock "content" %}
+  </body>
+</html>
