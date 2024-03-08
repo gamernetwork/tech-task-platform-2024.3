@@ -23,8 +23,8 @@ Install **Python 3** if you don't already have it (should be fine on macOS and L
 Then, in a shell, run the following to set up the project:
 
 ```bash
-git clone https://github.com/gamernetwork/tech-task-platform-2023.3.git
-cd tech-task-platform-2023.3
+git clone https://github.com/gamernetwork/tech-task-platform-2024.3.git
+cd tech-task-platform-2024.3
 
 # set up a python virtual environment
 python3 -m venv .env
@@ -71,16 +71,12 @@ Please do the following:
      * Name (up to 200 characters, unique)
      * Created at (date/time, automatically set when model is created)
   1. Add a field to the `Post` model allowing a post to be associated with zero or more tags.
+  1. Make your DB reflect these above changes. Refer to the [Workflow section](https://docs.djangoproject.com/en/3.2/topics/migrations/#workflow) on migrations for steps to get your model changes into the database.
   1. Add a method or property to `Post` that returns a single string containing the name of all tags associated with the post, in alphabetical order.
      * For example, if a post is tagged with "Gaming", "Featured" and "Xbox", the output might be "Featured, Gaming, Xbox"
      * Ensure that this method can handle a post that has no tags.
-  1. Add suitable test cases for the method you created above.
+  1. Add suitable test cases for the method you created above. Refer to ["Writing our first test"](https://docs.djangoproject.com/en/3.2/intro/tutorial05/#writing-our-first-test) for information about writing and running tests. 
   1. Change the pages that display the Posts (e.g [http://127.0.0.1:8000/article/article-one/](http://127.0.0.1:8000/article/article-one/)) to show the string of associated tags at the bottom of the page.
-
-### Task reference information
-
-* Refer to the [Workflow section](https://docs.djangoproject.com/en/3.2/topics/migrations/#workflow) on migrations for steps to get your model changes into the database.
-* Refer to ["Writing our first test"](https://docs.djangoproject.com/en/3.2/intro/tutorial05/#writing-our-first-test) for information about writing and running tests. 
 
 ## Submitting your completed task
 
