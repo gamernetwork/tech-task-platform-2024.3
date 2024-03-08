@@ -6,7 +6,7 @@ In this task you will be working on a simple data platform for a news website.
 
 The project is built in Python and uses the Django framework (v3.2).
 
-You will be asked to:
+The aim is to develop a tagging feature for articles. You will be asked to:
 
   - Extend the models to include tags.
   - Add some tests for your work.
@@ -70,8 +70,10 @@ Please do the following:
   1. Add a `Tag` model with the following fields:
      * Name (up to 200 characters, unique)
      * Created at (date/time, automatically set when model is created)
+     Also give the `Tag` model a `__str__` method that returns the `Tag`'s name.
   1. Add a field to the `Post` model allowing a post to be associated with zero or more tags.
   1. Make your DB reflect these above changes. Refer to the [Workflow section](https://docs.djangoproject.com/en/3.2/topics/migrations/#workflow) on migrations for steps to get your model changes into the database.
+  1. Make it so you can add tags to articles on the admin site (HINT: All this requires is adding a `TagAdmin` class to `cms/admin.py` - use the `PostAdmin` class as a guide and replace 'Post' with 'Tag'. Don't forget to import your `Tag` model here too!).
   1. Add a method or property to `Post` that returns a single string containing the name of all tags associated with the post, in alphabetical order.
      * For example, if a post is tagged with "Gaming", "Featured" and "Xbox", the output might be "Featured, Gaming, Xbox"
      * Ensure that this method can handle a post that has no tags.
