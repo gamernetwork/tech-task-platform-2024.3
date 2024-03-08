@@ -79,7 +79,6 @@ Please do the following:
      * For example, if a post is tagged with "Gaming", "Featured" and "Xbox", the output might be "Featured, Gaming, Xbox"
      * Ensure that this method can handle a post that has no tags.
   1. Add suitable test cases for the method you created above. Refer to ["Writing our first test"](https://docs.djangoproject.com/en/3.2/intro/tutorial05/#writing-our-first-test) for information about writing and running tests. 
-  1. Change the pages that display the Posts (e.g [http://127.0.0.1:8000/article/article-one/](http://127.0.0.1:8000/article/article-one/)) to show the string of associated tags at the bottom of the page.
 
 ## Submitting your completed task
 
