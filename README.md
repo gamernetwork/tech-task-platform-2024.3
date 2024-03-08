@@ -9,8 +9,9 @@ The project is built in Python and uses the Django framework (v3.2).
 The aim is to develop a tagging feature for articles. You will be asked to:
 
   - Extend the models to include tags.
+  - Make the tags creatable on the admin site.
+  - Create a method that could be used to list tags.
   - Add some tests for your work.
-  - Display these tags on some posts.
 
 The task is designed to demonstrate your ability to use new technology, to interpret specifications, solve programming problems, and show an understanding of test coverage.
 
@@ -78,7 +79,7 @@ Please do the following:
   1. Add a method or property to `Post` that returns a single string containing the name of all tags associated with the post, in alphabetical order.
      * For example, if a post is tagged with "Gaming", "Featured" and "Xbox", the output might be "Featured, Gaming, Xbox"
      * Ensure that this method can handle a post that has no tags.
-  1. Add suitable test cases for the method you created above. Refer to ["Writing our first test"](https://docs.djangoproject.com/en/3.2/intro/tutorial05/#writing-our-first-test) for information about writing and running tests. 
+  1. Add suitable test cases for the method you created in the previous step. Refer to ["Writing our first test"](https://docs.djangoproject.com/en/3.2/intro/tutorial05/#writing-our-first-test) for information about writing and running tests. 
 
 ## Submitting your completed task
 
